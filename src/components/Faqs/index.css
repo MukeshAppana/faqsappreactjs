@@ -1,35 +1,61 @@
-.main-container {
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f8;
+  min-height: 100vh;
+}
+
+.faqs-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  max-height: 100%;
-  font-family: 'Roboto';
-  padding: 20px;
-  background-color: #f1f5f8;
+  width: 87%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding-top: 32px;
+  padding-right: 12px;
+  padding-bottom: 32px;
+  padding-left: 12px;
+  max-width: 550px;
 }
 
-.inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: white;
-  width: 80%;
-  height: 100%;
+@media screen and (min-width: 768px) {
+  .faqs-container {
+    width: 90%;
+    max-width: 1140px;
+    padding: 32px;
+  }
 }
 
-.main-heading {
-  color: #cb8805;
-  font-size: 40px;
-}
-
-.ul-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+.faqs-list {
+  width: 100%;
   list-style-type: none;
   padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .faqs-list {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .faqs-list {
+    width: 80%;
+  }
+}
+
+.heading {
+  color: #cb8805;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 64px;
+  }
 }
